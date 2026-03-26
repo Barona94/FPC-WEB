@@ -1,0 +1,17 @@
+/* Color de fondo */
+body {
+    background-color: lightblue;
+}
+
+/* Títulos en rojo */
+h1, h2, h3 {
+    color: red;
+}
+
+/* Imagen */
+img {
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
