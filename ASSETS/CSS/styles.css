@@ -1,18 +1,23 @@
+/* BASE */
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     background-color: lightblue;
     display: flex;
     flex-direction: column;
 }
 
+/* TITULOS */
 h1, h2, h3 {
     color: black;
     text-align: center;
 }
 
-
+/* GRID */
 .contenedor {
     display: grid;
     grid-template-columns: 1fr;
@@ -20,20 +25,19 @@ h1, h2, h3 {
     padding: 10px;
 }
 
-
+/* CONTENIDO */
 article {
     background: white;
     padding: 10px;
     border-radius: 5px;
 }
 
-
 aside {
     background: #ddd;
     padding: 10px;
 }
 
-
+/* IMAGEN */
 img {
     width: 100%;
     max-width: 400px;
@@ -42,24 +46,26 @@ img {
     margin: auto;
 }
 
-
-/* footer abajo */
-html, body {
-    height: 100%;
-    margin: 0;
+/* BOTÓN */
+#btn-arriba {
+    position: fixed;
+    bottom: 80px; /* subimos un poco más */
+    right: 20px;
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-
+/* MAIN CRECE */
 main {
     flex: 1;
 }
 
-
+/* FOOTER */
 .footer-simple {
     background-color: #212529;
     color: white;
