@@ -5,59 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fútbol Profesional Colombiano</title>
 
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="ASSETS/CSS/styles.css">
 </head>
 <body>
 
-    <!-- Encabezado -->
+    <!-- NAVBAR BOOTSTRAP -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FPC</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Equipos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<main>
     <header>
-        <h1>Fútbol Profesional Colombiano (FPC)</h1>
-        <p>Pasión, historia y talento en el fútbol de Colombia</p>
+        <h1>Fútbol Profesional Colombiano</h1>
     </header>
 
-    
-    <section>
+    <section class="contenedor">
 
-        
-        <article>
-            <h2>¿Qué es el FPC?</h2>
-            <p>
-                El Fútbol Profesional Colombiano (FPC) es la liga principal de fútbol en Colombia. 
-                Está conformado por equipos históricos que compiten en torneos como la Liga BetPlay.
-            </p>
+        <div>
+            <article>
+                <h2>¿Qué es el FPC?</h2>
+                <p>El FPC es la liga profesional de Colombia...</p>
+                <img src="ASSETS/IMG/FPC.jpeg" alt="FPC">
+            </article>
 
-            <p>
-                A lo largo de los años, el FPC ha sido cuna de grandes jugadores que han destacado 
-                a nivel internacional, llevando el talento colombiano a ligas de todo el mundo.
-            </p>
+            <article>
+                <h2>Equipos destacados</h2>
+                <p>Atlético Nacional, América de Cali, Millonarios...</p>
+            </article>
+        </div>
 
-            <!-- Imagen -->
-            <img src="ASSETS/IMG/FPC.jpeg" alt="Fútbol colombiano" width="350">
-        </article>
-
-        <article>
-            <h2>Equipos destacados</h2>
-            <p>
-                Entre los equipos más importantes del fútbol colombiano se encuentran Atlético Nacional, 
-                Millonarios, América de Cali y Deportivo Cali, cada uno con una gran historia y afición.
-            </p>
-        </article>
-
-        
         <aside>
             <h3>Dato curioso</h3>
-            <p>
-                Atlético Nacional es uno de los equipos colombianos con más títulos internacionales.
-            </p>
+            <p>Atlético Nacional tiene títulos internacionales.</p>
+            <img src="ASSETS/IMG/COPAS.webp" alt="FPC">
         </aside>
 
     </section>
+</main>
+<footer class="footer-simple">
+    <p>© 2026 FPC - Todos los derechos reservados</p>
+</footer>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>© 2026 </p>
-    </footer>
+</body>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

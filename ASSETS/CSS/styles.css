@@ -1,17 +1,82 @@
-/* Color de fondo */
+
 body {
+    margin: 0;
+    font-family: Arial, sans-serif;
     background-color: lightblue;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Títulos en rojo */
 h1, h2, h3 {
-    color: red;
+    color: black;
+    text-align: center;
 }
 
-/* Imagen */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+article {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+aside {
+    background: #ddd;
+    padding: 10px;
+}
+
+
 img {
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     display: block;
     margin: auto;
+}
+
+
+/* footer abajo */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex: 1;
+}
+
+
+.footer-simple {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* 📲 TABLET */
+@media (min-width: 768px) {
+    .contenedor {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/* 💻 DESKTOP */
+@media (min-width: 1024px) {
+    .contenedor {
+        grid-template-columns: 3fr 1fr;
+    }
 }
